@@ -1,5 +1,12 @@
+require "pry"
+
 def reverse_string(str)
-  # type your code in here
+  arr = str.split("")
+  newArr = []
+  for i in 0..arr.length-1
+    newArr.unshift(arr[i]) 
+  end
+  newArr.join("")
 end
 
 if __FILE__ == $PROGRAM_NAME
